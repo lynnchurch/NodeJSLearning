@@ -15,6 +15,7 @@ Ubuntu
 >node -v
 >sudo npm cache clean -f
 >sudo npm install -g n
->sudo n stable
+>sudo n stable 
 >node -v
->If the version information is incorrcet,you should restart the machine.
+
+

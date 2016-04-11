@@ -1,6 +1,6 @@
 # NodeJSLearning
 Some practice about Node.js
-# Install
+# Installation
 ##ubuntu:  
 
 >sudo apt-get update  

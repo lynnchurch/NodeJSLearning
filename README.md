@@ -40,4 +40,4 @@ Ubuntu
 
 ## SSH
 ### Installation:
-<sudo apt-get install ssh
+>sudo apt-get install ssh

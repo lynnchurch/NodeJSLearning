@@ -17,3 +17,18 @@ Ubuntu
 >sudo npm install -g n  
 >sudo n stable  
 >node -v  (If the version information is incorrect,you shoud restart the machine.)
+
+# Other Tools
+
+## Mongodb
+### Installation:
+>sudo apt-get install mongodb
+
+## Redis
+### Installation:
+>wget http://download.redis.io/releases/redis-stable.tar.gz  
+>tar xvfz redis-stable.tar.gz  
+>cd redis-stable  
+>sudo make
+>sudo make install
+>sudo make test

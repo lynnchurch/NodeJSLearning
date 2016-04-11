@@ -37,3 +37,7 @@ Ubuntu
 ### Installatioin:
 1. Access www.sublimetext.com and download it.  
 2. sudo dpkg -i filename.deb
+
+## SSH
+### Installation:
+<sudo apt-get install ssh

@@ -45,7 +45,7 @@ Ubuntu
 ## cnpm
 ### Installation:
 >sudo npm config set strict-ssl false  
->npm install -g cnpm --registry=https://registry.npm.taobao.org
+>sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 ## nodemon
 ### Installation:

@@ -41,3 +41,20 @@ Ubuntu
 ## SSH
 ### Installation:
 >sudo apt-get install ssh
+
+## cnpm
+### Installation:
+>sudo npm config set strict-ssl false  
+>npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+## nodemon
+### Installation:
+>sudo npm install -g nodemon
+
+## pm2
+### Installation:
+>sudo npm install -g pm2
+
+## node-inspector
+### Installation:
+>sudo npm install -g node-inspector

@@ -18,6 +18,9 @@ router.get('/test',function(req,res,next){
 		nickName:' Fight ',
 		blog:'lynnchurch.blog'
 	});
+
+	user.print();
+
 	console.log('fullName:',user.fullName,'userJSON:',JSON.stringify(user));
 	user.save(function(err){
 		if(err)
@@ -25,6 +28,14 @@ router.get('/test',function(req,res,next){
 			console.log('err:',err);
 			return next();
 		}
+		User.findByUserName('Lynn',function(err,doc){
+			if(err)
+			{
+				console.log('err:',err);
+				return next();
+			}
+			console.log('findByUserName:',JSON.stringify(doc));
+		});
 		User.find({},function(err,docs){
 			if(err)
 			{

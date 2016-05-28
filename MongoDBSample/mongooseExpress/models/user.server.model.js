@@ -20,17 +20,17 @@ var UserSchema=mongoose.Schema({
 	},
 	blog:{
 		type:String,
-		set:function(url){
-			if(!url)
-			{
-				return url;
-			}
-			if(0!==url.indexOf('http://') && 0!==url.indexOf('https://'))
-			{
-				url='http://'+url;
-				return url;
-			}
-		},
+		// set:function(url){
+		// 	if(!url)
+		// 	{
+		// 		return url;
+		// 	}
+		// 	if(0!==url.indexOf('http://') && 0!==url.indexOf('https://'))
+		// 	{
+		// 		url='http://'+url;
+		// 		return url;
+		// 	}
+		// },
 		get:function(url){
 			if(!url)
 			{
@@ -51,5 +51,21 @@ UserSchema.virtual('fullName').get(function(){
 });
 
 UserSchema.set('toJSON',{virtuals:true});
+
+// 静态方法
+UserSchema.statics.findByUserName=function(username,cb){
+	this.findOne({userName:username},function(err,doc){
+		cb(err,doc);
+	});
+};
+
+// 实例方法
+UserSchema.methods.print=function(){
+	console.log('UserInfo:');
+	console.log('userJson:',JSON.stringify(this));
+	console.log('\tUserName:',this.userName);
+	console.log('\tblog:',this.blog);
+	console.log('\tcreateTime:',this.createTime);
+};
 
 mongoose.model('User',UserSchema);

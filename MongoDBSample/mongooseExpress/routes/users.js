@@ -12,8 +12,13 @@ router.get('/', function(req, res, next) {
 router.get('/test',function(req,res,next){
 	var user=new User({
 		uid:1,
-		username:'Lynn'
+		userName:'Lynn',
+		firstName:'Lynn',
+		lastName:'Church',
+		nickName:' Fight ',
+		blog:'lynnchurch.blog'
 	});
+	console.log('fullName:',user.fullName,'userJSON:',JSON.stringify(user));
 	user.save(function(err){
 		if(err)
 		{

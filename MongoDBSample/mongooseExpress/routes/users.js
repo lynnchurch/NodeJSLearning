@@ -16,7 +16,10 @@ router.get('/test',function(req,res,next){
 		firstName:'Lynn',
 		lastName:'Church',
 		nickName:' Fight ',
-		blog:'lynnchurch.blog'
+		blog:'lynnchurch.blog',
+		age:22,
+		loginStatus:'online',
+		desc:'I am a programmer'
 	});
 
 	user.print();

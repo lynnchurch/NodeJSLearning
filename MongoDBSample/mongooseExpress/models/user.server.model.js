@@ -43,7 +43,24 @@ var UserSchema=mongoose.Schema({
 			}
 		}
 	},
-	lastLogin:Date
+	age:{
+		type:Number,
+		required:true,
+		max:150,
+		min:0
+	},
+	lastLogin:Date,
+	loginStatus:{
+		type:String,
+		enum:['online','offline']
+	},
+	desc:{
+		type:String,
+		match:/I/g,
+		validate:function(desc){
+			return desc.length>=10;
+		}
+	}
 });
 
 UserSchema.virtual('fullName').get(function(){

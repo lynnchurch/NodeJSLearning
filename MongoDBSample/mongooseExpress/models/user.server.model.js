@@ -85,4 +85,20 @@ UserSchema.methods.print=function(){
 	console.log('\tcreateTime:',this.createTime);
 };
 
+// 预处理中间件(‘true’，下一个要执行的中间件并行执行)
+UserSchema.pre('save',true,function(next,done){
+	console.log('this is pre save middlware');
+	next();
+	done();
+});
+
+// 后置中间件
+UserSchema.post('save',function(doc){
+	if(doc)
+	{
+		console.log('doc:',JSON.stringify(doc));
+	}
+	console.log('this is post save middleware');
+});
+
 mongoose.model('User',UserSchema);

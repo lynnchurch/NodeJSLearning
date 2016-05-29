@@ -20,6 +20,10 @@ Ubuntu
 
 # Other Tools
 
+## MySQL
+### Installation:
+>sudo apt-get install mysql-server mysql-client
+
 ## Mongodb
 ### Installation:
 >sudo apt-get install mongodb

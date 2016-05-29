@@ -3,10 +3,11 @@ var router = express.Router();
 
 var mongoose=require('mongoose');
 var User=mongoose.model('User');
+var News=mongoose.model('News');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+	res.send('respond with a resource');
 });
 
 router.get('/test',function(req,res,next){
@@ -22,6 +23,11 @@ router.get('/test',function(req,res,next){
 		desc:'I am a programmer'
 	});
 
+	var news=new News({
+		title:'I have a dream!',
+		author:user
+	});
+
 	user.print();
 
 	console.log('fullName:',user.fullName,'userJSON:',JSON.stringify(user));
@@ -31,22 +37,33 @@ router.get('/test',function(req,res,next){
 			console.log('err:',err);
 			return next();
 		}
-		User.findByUserName('Lynn',function(err,doc){
-			if(err)
-			{
-				console.log('err:',err);
-				return next();
+		news.save(function(err){
+			if(err){
+				return console.log('err:',err);
 			}
-			console.log('findByUserName:',JSON.stringify(doc));
+			News.findOne().populate('author').exec(function(err,doc){
+				if(err){
+					return console.log('err:',err);
+				}
+				res.json(doc);
+			});
 		});
-		User.find({},function(err,docs){
-			if(err)
-			{
-				console.log('err:',err);
-				return next();
-			}
-			res.json(docs);
-		});
+		// User.findByUserName('Lynn',function(err,doc){
+		// 	if(err)
+		// 	{
+		// 		console.log('err:',err);
+		// 		return next();
+		// 	}
+		// 	console.log('findByUserName:',JSON.stringify(doc));
+		// });
+		// User.find({},function(err,docs){
+		// 	if(err)
+		// 	{
+		// 		console.log('err:',err);
+		// 		return next();
+		// 	}
+		// 	res.json(docs);
+		// });
 	});
 });
 

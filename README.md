@@ -11,6 +11,11 @@ sudo apt-get update
 sudo apt-get install nodejs 
 ```
 * Centos:  
+## epel
+```
+yum install epel-release
+```
+## nodejs
 ```
 yum install nodejs
 ```
@@ -77,6 +82,11 @@ sudo make test
 ### Installation
 ```
 sudo apt-get install ssh
+```
+## npm
+* Centos:
+```
+yum install npm
 ```
 
 ## cnpm

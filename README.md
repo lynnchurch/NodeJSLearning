@@ -2,7 +2,7 @@
 Some practice about Node.js.
 
 # Installation
-* Ubuntu: 
+## Ubuntu: 
 ```
 sudo apt-get update  
 sudo apt-get install -y python-software-properties software-properties-common  
@@ -10,12 +10,13 @@ sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update  
 sudo apt-get install nodejs 
 ```
-* Centos:  
-## epel
+## Centos:
+* epel  
+
 ```
 yum install epel-release
 ```
-## nodejs
+* nodejs
 ```
 yum install nodejs
 ```

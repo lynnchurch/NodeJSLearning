@@ -34,7 +34,6 @@ node -v  (If the version information is incorrect,you shoud restart the machine.
 # Other Tools
 
 ## MySQL
-### Installation
 * Ubuntu:  
 ```
 sudo apt-get install mysql-server mysql-client
@@ -47,7 +46,6 @@ systemctl enable mariadb.service
 ```
 
 ## Mongodb
-### Installation
 * Ubuntu:
 ```
 sudo apt-get install mongodb
@@ -59,7 +57,6 @@ yum install mongodb
 ```
 
 ## Redis
-### Installation
 * Ubuntu:  
 ```
 wget http://download.redis.io/releases/redis-stable.tar.gz  
@@ -75,12 +72,10 @@ sudo make test
 ```
 
 ## Sublime Text
-### Installatioin
 1. Access www.sublimetext.com and download it.  
 2. sudo dpkg -i filename.deb
 
 ## SSH
-### Installation
 ```
 sudo apt-get install ssh
 ```
@@ -91,26 +86,22 @@ yum install npm
 ```
 
 ## cnpm
-### Installation
 ```
 sudo npm config set strict-ssl false  
 sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
 ## nodemon
-### Installation
 ```
 sudo npm install -g nodemon
 ```
 
 ## pm2
-### Installation
 ```
 sudo npm install -g pm2
 ```
 
 ## node-inspector
-### Installation
 ```
 sudo npm install -g node-inspector
 ```

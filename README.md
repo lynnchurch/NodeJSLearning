@@ -106,7 +106,7 @@ sudo npm install -g pm2
 sudo npm install -g node-inspector
 ```
 ## Keystone
-[should install mogodb](#mongodb)
+<A HREF="#mongodb">should install mogodb</A>
 ```
 sudo npm install -g yo
 sudo npm install -g generator-keystone

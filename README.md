@@ -44,7 +44,7 @@ yum -y install mariadb*
 systemctl start mariadb.service  
 systemctl enable mariadb.service
 ```
-
+<span id="mongodb"></span>
 ## Mongodb
 * Ubuntu:
 ```
@@ -105,3 +105,12 @@ sudo npm install -g pm2
 ```
 sudo npm install -g node-inspector
 ```
+## Keystone
+<A HREF="#mongodb">should install mogodb</A>
+```
+sudo npm install -g yo
+sudo npm install -g generator-keystone
+```
+
+# Testing Tools
+[Jmeter](http://jmeter.apache.org/)

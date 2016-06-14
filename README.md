@@ -112,5 +112,10 @@ sudo npm install -g yo
 sudo npm install -g generator-keystone
 ```
 
+## Meteor
+```
+curl https://install.meteor.com/ | sh
+```
+
 # Testing Tools
 [Jmeter](http://jmeter.apache.org/)

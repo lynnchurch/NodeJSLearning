@@ -116,6 +116,14 @@ sudo npm install -g generator-keystone
 ```
 curl https://install.meteor.com/ | sh
 ```
+## Ruby
+* Centos:
+  1. rvm:
+    1. curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -  
+    2. curl -sSL https://get.rvm.io | bash -s stable
+    3. usermod -a -G rvm user
+    4. source /etc/profile.d/rvm.sh
+  2. rvm install ruby
 
 # Testing Tools
 [Jmeter](http://jmeter.apache.org/)

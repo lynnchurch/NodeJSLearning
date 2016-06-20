@@ -125,5 +125,7 @@ curl https://install.meteor.com/ | sh
     4. source /etc/profile.d/rvm.sh
   2. rvm install ruby
 
+## Sass
+gem install sass(should install Ruby)
 # Testing Tools
 [Jmeter](http://jmeter.apache.org/)

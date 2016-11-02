@@ -69,6 +69,8 @@ sudo make test
 * Centos: 
 ```
  yum install redis
+ service redis start (启动服务)
+ chkconfig redis on (开机自启动)
 ```
 
 ## Sublime Text

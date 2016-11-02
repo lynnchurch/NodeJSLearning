@@ -69,6 +69,7 @@ sudo make test
 * Centos: 
 ```
  yum install redis
+ redis-server --version
  service redis start (启动服务)
  chkconfig redis on (开机自启动)
 ```
